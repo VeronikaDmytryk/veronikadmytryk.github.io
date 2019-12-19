@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "FuturisC";
+  src: url('..//fonts/FuturisC-Bold.eot'); /* IE9 Compat Modes */
+  src: url('..//fonts/FuturisC-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('..//fonts/FuturisC-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('..//fonts/FuturisC-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('..//fonts/FuturisC-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('..//fonts/FuturisC-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "FuturisC";
+  src: url('..//fonts/FuturisC.eot'); /* IE9 Compat Modes */
+  src: url('..//fonts/FuturisC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('..//fonts/FuturisC.woff2') format('woff2'), /* Super Modern Browsers */
+       url('..//fonts/FuturisC.woff') format('woff'), /* Pretty Modern Browsers */
+       url('..//fonts/FuturisC.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('..//fonts/FuturisC.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "FuturaFuturisC";
+  src: url('..//fonts/FuturaFuturisC-Bold.eot'); /* IE9 Compat Modes */
+  src: url('..//fonts/FuturaFuturisC-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('..//fonts/FuturaFuturisC-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('..//fonts/FuturaFuturisC-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('..//fonts/FuturaFuturisC-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('..//fonts/FuturaFuturisC-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "FuturaFuturisC";
+  src: url('..//fonts/FuturaFuturisC.eot'); /* IE9 Compat Modes */
+  src: url('..//fonts/FuturaFuturisC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('..//fonts/FuturaFuturisC.woff2') format('woff2'), /* Super Modern Browsers */
+       url('..//fonts/FuturaFuturisC.woff') format('woff'), /* Pretty Modern Browsers */
+       url('..//fonts/FuturaFuturisC.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('..//fonts/FuturaFuturisC.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 400;
+}

@@ -1,0 +1,380 @@
+@media screen and (max-width: 1200px) {
+  .container{
+  width: 95%;
+}
+
+  .header__item{
+    margin-right: 10px;
+  }
+
+  .menu__right{
+    margin-left: -275px;
+  }
+
+header{
+  background-size: cover;
+}
+  .company{
+  right: 30px;
+}
+
+.switch-button{
+  width: 262px;
+}
+
+.screen__iphone{
+  width: 38%;
+  top: 3%;
+}
+.screens img{
+  width: 195%;
+}
+.main__button_blue img{
+  float: none;
+  width: 100%;
+  max-width: 100px;
+  font-size: 0.750rem;
+  margin: 15px auto;
+  margin-top: 50px;
+}
+
+.header__logo{
+  width: 100%;
+  height: 20px;
+  max-width: 155px;
+  margin: 55px auto 0 auto;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+  .container{
+  width: 95%;
+}
+
+.review__title{
+  margin-top: 0px!important;
+}
+
+  .header__item{
+    margin-right: 10px;
+  }
+
+  .menu__right{
+    margin-left: -275px;
+  }
+
+header{
+  background-size: cover;
+}
+
+.reason__img{
+  margin-left: 0px;
+  width: 100%;
+}
+
+.advantage__block{
+  margin-bottom: 50px;
+}
+
+.header__hamburger{
+  margin-right: 12px;
+}
+
+#advantages .container{
+  padding-bottom: 20px;
+}
+
+#reasons{
+  margin-top: -80px;
+  padding-bottom: 20px;
+}
+
+.reason{
+  margin-top: 0px;
+}
+
+.location__img{
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+#locations {
+  padding-bottom: 50px;
+}
+
+#interfaces{
+  padding: 50px 0px 70px 0px;
+}
+.screen__iphone{
+  width: 38%;
+  top: 5%;
+}
+
+.screens img{
+  width: 195%;
+}
+.screens{
+  margin-top: -20px;
+  width: 100%;
+}
+
+.company{
+  right: 30px;
+}
+
+.switch-button{
+  width: 262px;
+}
+
+
+.option__plan_active{
+  margin-top: 10px;
+}
+
+#interfaces .slick-slide {
+    margin: 120px 20px 0 20px;
+}
+
+.main__button_blue img{
+  float: none;
+  width: 100%;
+  max-width: 100px;
+  font-size: 0.750rem;
+  margin: 15px auto;
+  margin-top: 50px;
+}
+
+.header__logo{
+  width: 100%;
+  height: 20px;
+  max-width: 155px;
+  margin: 55px auto 0 auto;
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+.container{
+  width: 90%;
+}
+
+.header__hamburger{
+  display: block;
+}
+#interfaces .slick-slide {
+    margin: 120px 10px 0 10px;
+}
+
+header{
+  background-size: cover;
+  background: #edf0f2;
+  height: 100%;
+  padding-bottom: 40px;
+  max-height: 700px!important;
+}
+.container{
+  width: 95%;
+}
+
+.menu__right{
+    margin-left: 0px;
+  }
+.header__logo{
+  width: 100%;
+  height: 20px;
+  max-width: 155px;
+  margin: 15px auto;
+}
+
+.header__hamburger{
+  margin-top: 12px;
+}
+
+.header__title{
+  font-size: 3.275rem;
+}
+
+.menu__right{
+  float:none;
+  text-align: center;
+}
+
+.main__button_blue img{
+  float: none;
+  width: 100%;
+  max-width: 100px;
+  font-size: 0.750rem;
+  margin: 15px auto;
+}
+
+.header__menu, .header__menu2{
+  display: none;
+}
+
+.advantage__block{
+  margin-bottom: 50px;
+}
+
+#advantages .container{
+  padding-bottom: 20px;
+}
+
+#reasons{
+  margin-top: -80px;
+  padding-bottom: 20px;
+}
+
+.reason{
+  margin-top: 0px;
+}
+
+.dropbox__logo{
+   margin-right: 7px;
+}
+
+.reason__img{
+  margin-left: 0px;
+  width: 100%;
+}
+.location__img{
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+#locations {
+  padding-bottom: 50px;
+}
+
+#interfaces{
+  padding: 50px 0px 70px 0px
+}
+
+.screens{
+  margin-top: -40px;
+  width: 100%;
+}
+
+.slider-nav{
+  overflow: hidden;
+}
+.slider-for{
+  margin-top: 30px!important;
+}
+
+.slick-track{
+  margin-top: 0!important;
+}
+
+.slider-for{
+  margin-top: 100px;
+}
+
+.form__button{
+  float: none;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+#review{
+  padding-bottom: 60px;
+}
+
+#options{
+  padding: 50px 0 80px 0;
+}
+
+#interfaces .slick-track{
+  margin-top: -40%;
+  margin-bottom: 150px;
+}
+
+.screen__iphone{
+  width: 35%;
+  top: 28%;
+}
+
+.screens img{
+  width: 200%;
+}
+
+.screens{
+  margin: 15px auto 60px auto;
+  min-height: 120px;
+}
+
+.switch-button{
+  width: 262px;
+}
+
+.logo{
+  margin-top: 10vh;
+}
+
+.company{
+  right: 30px;
+}
+
+.option__plan{
+  margin-top: 10px;
+  width: 100%;
+}
+.option__plan:first-child{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer__madeby, .footer__text{
+  float: none;
+  text-align: center;
+}
+
+.social-links{
+  margin-bottom: 60px;
+}
+.prefooter{
+  padding-top: 50px;
+}
+
+
+.download__button{
+  width: 140px;
+  max-width: 140px;
+
+}
+
+#overlay{
+  padding: 50px 0;
+}
+
+#thx{
+  width: 95%;
+  padding: 50px 10px;
+}
+
+.screen__background{
+  position: relative;
+  margin: 30px auto 40px auto;
+}
+
+
+@media screen and (max-width: 359px){
+  .additional__button{
+    margin-top: 15px;
+    margin-left: 0px!important;
+  }
+
+  .screen__background{
+  position: relative;
+  margin: 0px auto 0px auto;
+}
+
+header{
+  background: #edf0f2;
+  height: 100%;
+  padding-bottom: 40px;
+  max-height: 850px!important;
+}
+
+} 

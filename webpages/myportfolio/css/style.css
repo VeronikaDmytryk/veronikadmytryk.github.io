@@ -1,0 +1,865 @@
+
+
+@font-face {
+
+  font-family: 'Natasha';
+
+  src: url('..//fonts/Natasha/Natasha.eot'); /* IE9 Compat Modes */
+
+  src: url('..//fonts/Natasha/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+
+       url('..//fonts/Natasha/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+
+       url('..//fonts/Natasha/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+
+       url('..//fonts/Natasha/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+       url('..//fonts/Natasha/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+}
+
+
+
+@font-face {
+
+    font-family: MuseoSansCyrl; /* Имя шрифта */
+
+    src: url('..//fonts/MuseoSans/MuseoSansCyrl-100Italic.eot'); /* IE9 Compat Modes */
+
+  	src: url('..//fonts/MuseoSans/MuseoSansCyrl-100Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-100Italic.woff2') format('woff2'), /* Super Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-100Italic.woff') format('woff'), /* Pretty Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-100Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-100Italic.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+   	font-style: italic;
+
+   	font-weight: 100;
+
+   }
+
+@font-face {
+
+    font-family: MuseoSansCyrl; /* Имя шрифта */
+
+    src: url('..//fonts/MuseoSans/MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
+
+  	src: url('..//fonts/MuseoSans/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+   	   url('..//fonts/MuseoSans/MuseoSansCyrl-100.svg#svgFontName') format('svg');
+
+   	font-weight: 100;
+
+   }
+
+@font-face {
+
+    font-family: MuseoSansCyrl; /* Имя шрифта */
+
+    src: url('..//fonts/MuseoSans/MuseoSansCyrl-300Italic.eot'); /* IE9 Compat Modes */
+
+  	src: url('..//fonts/MuseoSans/MuseoSansCyrl-300Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-300Italic.woff2') format('woff2'), /* Super Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-300Italic.woff') format('woff'), /* Pretty Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-300Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+   	   url('..//fonts/MuseoSans/MuseoSansCyrl-300Italic.svg#svgFontName') format('svg');
+
+   	font-weight: 300;
+
+   	font-style: italic;
+
+   }
+
+@font-face {
+
+    font-family: MuseoSansCyrl; /* Имя шрифта */
+
+    src: url('..//fonts/MuseoSans/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
+
+  	src: url('..//fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+   		url('..//fonts/MuseoSans/MuseoSansCyrl-300.svg#svgFontName') format('svg');
+
+   	font-weight: 300;
+
+   }
+
+@font-face {
+
+    font-family: MuseoSansCyrl; /* Имя шрифта */
+
+    src: url('..//fonts/MuseoSans/MuseoSansCyrl-900Italic.eot'); /* IE9 Compat Modes */
+
+  	src: url('..//fonts/MuseoSans/MuseoSansCyrl-900Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-900Italic.woff2') format('woff2'), /* Super Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-900Italic.woff') format('woff'), /* Pretty Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-900Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+   	   url('..//fonts/MuseoSans/MuseoSansCyrl-900Italic.svg#svgFontName') format('svg');
+
+   	font-weight: 900;
+
+   	font-style: italic;
+
+   }
+
+@font-face {
+
+	font-family: MuseoSansCyrl; /* Имя шрифта */
+
+	src: url('..//fonts/MuseoSans/MuseoSansCyrl-900.eot'); /* IE9 Compat Modes */
+
+  	src: url('..//fonts/MuseoSans/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+
+       url('..//fonts/MuseoSans/MuseoSansCyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+
+   	   url('..//fonts/MuseoSans/MuseoSansCyrl-900.svg#svgFontName') format('svg');
+
+   	font-weight: 900;
+
+}
+
+
+
+
+
+body, div, header, section, h2, h1, p, ul, li, form, input, img, button {
+
+  margin: 0px;
+
+  padding: 0px;
+
+  box-sizing: border-box;
+
+}
+
+
+
+.container{
+
+	width: 940px;
+
+	margin: 0px auto;
+
+}
+
+
+
+.clearfix:after {
+
+  content: "";
+
+  display: table;
+
+  width: 100%;
+
+}
+
+
+
+header{
+
+	background: #2c3039 url(..//img/background.jpg) center no-repeat;
+
+	background-size: 100%;
+
+	color: white;
+
+	text-align: center;
+
+	padding: 55px 0px 72px 0px;
+
+	height: 100vh;
+
+}
+
+
+
+.logo{
+
+	float:left;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 900;
+
+	text-transform: uppercase;
+
+	font-size: 17px;
+
+	letter-spacing: 0.1em;
+
+}
+
+
+
+.logo span{
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 100;
+
+}
+
+
+
+.menu{
+
+	float: left;
+
+	margin-left: 170px; 
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 900;
+
+	font-size: 15px;
+
+	text-transform: uppercase;
+
+	letter-spacing: 0.1em;
+
+	margin-top: -4px;
+
+}
+
+
+
+.menu__item{
+
+	display: block;
+
+	float: left;
+
+	margin-right: 48px;
+
+	padding: 5px 0px;
+
+}
+
+
+
+
+
+.menu__item a{
+
+	color: white;
+
+	text-decoration: none;
+
+}
+
+
+
+.menu__item a:hover, .menu__item a:active, .menu__item a:focus, .menu__item a:visited{
+
+	text-decoration: none;
+
+	color: white;
+
+}
+
+
+
+.menu__item:last-child{
+
+	margin-right: 0px;
+
+}
+
+
+
+.menu__item:hover{
+
+	border-top: 1px solid white;
+
+	border-bottom: 1px solid white;
+
+	padding: 4.2px 0px;
+
+	cursor: pointer;
+
+}
+
+
+
+.email a{
+
+	float: right;
+
+	margin-top: 2px;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 300;
+
+	font-size: 13px;
+
+	cursor: pointer;
+
+	color: white;
+
+	text-decoration: none;
+
+}
+
+
+
+.header__title, .title, .background__title{
+
+		font-family: Natasha, sans-serif;
+
+		text-transform: uppercase;
+
+}
+
+
+
+.header{
+
+	margin-bottom: 30vh;
+
+}
+
+
+
+.header__title{
+
+	font-size: 40px;
+
+	letter-spacing: 0.2em;
+
+}
+
+
+
+.header__subtitle{
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 100;
+
+	font-size: 29px;
+
+	text-transform: uppercase;
+
+	line-height: 2.1em;
+
+}
+
+
+
+.header__arrow{
+
+	position: absolute;
+
+	width: 40px;
+
+	height: 40px;
+
+	border-radius: 50%;
+
+	border: 1px solid white;
+
+	margin: 0px auto 0px auto;
+
+	text-align: center;
+
+	left:0;
+
+	right: 0;
+
+	bottom: 40px;
+
+	font-family: Arial, sans-serif;
+
+	font-size: 18px;
+
+	line-height: 34px;
+
+}
+
+
+
+a.header__arrow{
+
+	color: white;
+
+	text-decoration: none;
+
+}
+
+
+
+a.header__arrow:hover{
+
+	background-color: white;
+
+	color: black;
+
+	cursor: pointer;
+
+}
+
+
+
+.title{
+
+	font-family: Natasha, sans-serif;
+
+	font-size: 37px;
+
+	margin: 85px 0px 77px 0px;
+
+}
+
+
+
+.background__title{
+
+	color: #888886;
+
+	font-family: Natasha, sans-serif;
+
+	font-size: 22px;
+
+	margin-bottom: 45px;
+
+}
+
+.background{
+
+	width: 430px;
+
+	float: left;
+
+	margin-right: 50px;
+
+}
+
+
+
+.background__text{
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 300;
+
+	font-size: 15px;
+
+	line-height: 1.7em;
+
+	margin-bottom: 40px;
+
+}
+
+
+
+.rewards{
+
+	float: left;
+
+}
+
+
+
+.rewards__item{
+
+	display: block;
+
+	float: left;
+
+	width: 112px;
+
+	text-transform: uppercase;
+
+	text-align: center;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 100;
+
+	font-size: 12px;
+
+	margin-right: 41px;
+
+}
+
+
+
+.rewards__item:last-chid{
+
+	margin-right: 0px;
+
+}
+
+
+
+.rewards__number{
+
+	display: inline-block;
+
+	height: 104px;
+
+	background: url('..//img/romb.png') top center no-repeat /contain;
+
+	background-size: contain;
+
+	background-position: 50% 50%;
+
+	margin-bottom: 25px;
+
+	padding: 40% 0;
+
+	width: 104px;
+
+}
+
+
+
+.contacts{
+
+	float: left;
+
+	margin-top: 68px;
+
+}
+
+
+
+.links{
+
+	float: left;
+
+	margin-right: 42px;
+
+}
+
+
+
+.links__item{
+
+	display: block;
+
+	padding-bottom: 5px;
+
+	margin-top: 5px;
+
+}
+
+
+
+.links__item a{
+
+	color: #204d15;
+
+	text-decoration: none;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 300;
+
+	font-size: 14px;
+
+	overflow: hidden;
+
+	border-bottom: 1px solid #becbbb;
+
+}
+
+
+
+.icon__user{
+
+	width: 64px;
+
+	height:64px;
+
+	border-radius: 50%;
+
+	background: #eef1ed;
+
+	float: left;
+
+	color: #204d15;
+
+	font-size: 25px;
+
+	text-align: center;
+
+	line-height: 64px;
+
+	margin-right: 20px;
+
+}
+
+
+
+.contacts__text{
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 300;
+
+	font-size: 14px;
+
+	color: #90908e;
+
+	line-height: 64px; 
+
+	float: left;
+
+}
+
+
+
+.contacts__icon{
+
+	float: left;
+
+}
+
+
+
+.skills__item{
+
+	display: block;
+
+	float: left;
+
+	width: 220px;
+
+	margin-right: 20px;
+
+	line-height: 61px;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 900;
+
+	font-size: 15px;
+
+	color: #4b4c47;
+
+}
+
+
+
+.skills__item:last-child{
+
+	margin-right: 0px;
+
+}
+
+
+
+.skills__number{
+
+	background: url('..//img/circle.png') top center no-repeat;
+
+	width: 61px;
+
+	height: 61px;
+
+	text-align: center;
+
+	line-height: 61px;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 100;
+
+	font-size: 13px;
+
+	color: #204d15;
+
+	float: left;
+
+	margin-right: 26px;
+
+}
+
+
+
+.works__img{
+
+	width: 300px;
+
+	height: 300px;
+
+	margin-right: 20px;
+
+	display: block;
+
+	float: left;
+
+	position: relative;
+
+	color: white;
+
+
+
+}
+
+.works__block{
+
+	opacity: 0.01;
+
+	text-align: center;
+
+}
+
+.works__block:hover{opacity: 1}
+
+
+
+.works__shadow{
+
+	background-color: black;
+
+	opacity: 0.5;
+
+	width: 300px;
+
+	height: 300px;
+
+	display: block;
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+
+
+}
+
+
+
+.works__title{
+
+	position: absolute;
+
+	top: 0px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	left: 0;
+
+	right: 0;
+
+	line-height: 300px;
+
+	font-size: 15px;
+
+	font-weight: 900;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	text-transform: uppercase;
+
+	letter-spacing: 0.3em;
+
+}
+
+
+
+.works__link{
+
+	position: absolute;
+
+	top: 165px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	left: 0;
+
+	right: 0;
+
+	line-height: 13px;
+
+}
+
+.works__link a{
+
+	font-size: 13px;
+
+	font-weight: 300;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	color: white;
+
+	text-decoration: none;
+
+}
+
+
+
+.works__block a{
+
+	border-bottom: 1px solid white;
+
+	padding-bottom: 3px; 
+
+}
+
+
+
+.works__img:last-child{
+
+	margin-right: 0px;
+
+}
+
+
+
+
+
+.footer__text{
+
+	margin: 125px 0px 112px 0px;
+
+	font-family: MuseoSansCyrl, sans-serif;
+
+	font-weight: 300;
+
+	font-size: 11px;
+
+	color: #91928f;
+
+	text-transform: uppercase;
+
+}
