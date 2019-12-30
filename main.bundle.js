@@ -37,6 +37,7 @@ module.exports = ""
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -47,9 +48,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'app works!';
+    function AppComponent(router) {
+        this.router = router;
+        this.title = 'Loading the Portfolio';
+        var path = localStorage.getItem('path');
+        if (path) {
+            localStorage.removeItem('path');
+            if (path.includes('projects/remotable')) {
+                var remotablePath = location.protocol + "//" + document.location.hostname + '/projects/remotable';
+                window.location.assign(remotablePath);
+            }
+            else {
+                this.router.navigate([path]);
+            }
+        }
     }
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -57,9 +71,10 @@ var AppComponent = (function () {
             template: __webpack_require__("./src/app/app.component.html"),
             styles: [__webpack_require__("./src/app/app.component.scss")]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _a) || Object])
     ], AppComponent);
     return AppComponent;
+    var _a;
 }());
 //# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/app.component.js.map
 
@@ -113,9 +128,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_7_app_main_screen_main_screen_component__["a" /* MainScreenComponent */] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_7_app_main_screen_main_screen_component__["a" /* MainScreenComponent */], pathMatch: 'full' },
     { path: ':id', component: __WEBPACK_IMPORTED_MODULE_12_app_project_project_component__["a" /* ProjectComponent */] },
-    { path: 'projects/remotable/**', redirectTo: '/projects/remotable' },
     { path: '**', redirectTo: '' }
 ];
 var AppModule = (function () {
@@ -501,15 +515,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ProjectComponent = (function () {
-    function ProjectComponent(route) {
+    function ProjectComponent(route, router) {
         this.route = route;
+        this.router = router;
         this.currentSlide = 0;
     }
     ProjectComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.subscribe(function (params) {
-            _this.project = _this.getProjectById(params['id']);
+            var project = _this.getProjectById(params['id']);
+            console.log(project);
+            if (project) {
+                _this.project = _this.getProjectById(params['id']);
+            }
+            else {
+                _this.project = null;
+                localStorage.removeItem('path');
+                _this.router.navigate(['']);
+            }
         });
     };
     ProjectComponent.prototype.getProjectById = function (id) {
@@ -539,10 +564,10 @@ var ProjectComponent = (function () {
             template: __webpack_require__("./src/app/project/project.html"),
             styles: [__webpack_require__("./src/app/project/project.scss")]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], ProjectComponent);
     return ProjectComponent;
-    var _a;
+    var _a, _b;
 }());
 //# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/project-component.js.map
 
@@ -551,7 +576,7 @@ var ProjectComponent = (function () {
 /***/ "./src/app/project/project.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"project-page\">\r\n    <header></header>\r\n    <div class=\"container\">\r\n        <h1>{{project.name}}</h1>\r\n        <hr/>\r\n        <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n                <p class=\"project-description\">{{project.description}}</p>\r\n                <div class=\"technologies\">\r\n                    <ul>\r\n                        <li *ngFor=\"let item of project.technologies\">{{item}}</li>\r\n                    </ul>\r\n                </div>\r\n                <div class=\"buttons\" *ngIf=\"project.type !== 'design'\">\r\n                    <a href={{project.repositoryUrl}} target=\"_blank\" *ngIf=\"project.repositoryUrl\">\r\n                        <button class=\"sourse-code\">See Sourse code</button>\r\n                    </a>\r\n                    <a href={{project.demoUrl}} target=\"_blank\" *ngIf=\"project.demoUrl\">\r\n                        <button class=\"hvr-back-pulse\">See Demo</button>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-md-8\">\r\n                <div class=\"slider\" style=\"position: relative\">\r\n                    <div class=\"controls\" *ngIf=\"project.images.length != 1\">\r\n                        <div class=\"left\" (click)=\"changeSlide(-1)\">\r\n                            <i class=\"fa fa-angle-left\"></i>\r\n                        </div>\r\n                        <div class=\"right\" (click)=\"changeSlide(1)\">\r\n                            <i class=\"fa fa-angle-right\"></i>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"image\">\r\n                        <img src={{project.images[currentSlide]}} class=\"project-photo\" alt=\"main photo\" />\r\n                    </div>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer></footer>"
+module.exports = "<div class=\"project-page\">\r\n    <header></header>\r\n    <div class=\"container\" *ngIf=\"project\">\r\n        <h1>{{project.name}}</h1>\r\n        <hr/>\r\n        <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n                <p class=\"project-description\">{{project.description}}</p>\r\n                <div class=\"technologies\">\r\n                    <ul>\r\n                        <li *ngFor=\"let item of project.technologies\">{{item}}</li>\r\n                    </ul>\r\n                </div>\r\n                <div class=\"buttons\" *ngIf=\"project.type !== 'design'\">\r\n                    <a href={{project.repositoryUrl}} target=\"_blank\" *ngIf=\"project.repositoryUrl\">\r\n                        <button class=\"sourse-code\">See Sourse code</button>\r\n                    </a>\r\n                    <a href={{project.demoUrl}} target=\"_blank\" *ngIf=\"project.demoUrl\">\r\n                        <button class=\"hvr-back-pulse\">See Demo</button>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-md-8\">\r\n                <div class=\"slider\" style=\"position: relative\">\r\n                    <div class=\"controls\" *ngIf=\"project.images.length != 1\">\r\n                        <div class=\"left\" (click)=\"changeSlide(-1)\">\r\n                            <i class=\"fa fa-angle-left\"></i>\r\n                        </div>\r\n                        <div class=\"right\" (click)=\"changeSlide(1)\">\r\n                            <i class=\"fa fa-angle-right\"></i>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"image\">\r\n                        <img src={{project.images[currentSlide]}} class=\"project-photo\" alt=\"main photo\" />\r\n                    </div>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<footer></footer>"
 
 /***/ }),
 
@@ -729,7 +754,7 @@ var projects = [
             "../assets/projects/remotable/3.png",
             "../assets/projects/remotable/4.png"
         ],
-        "demoUrl": "/projects/remotable"
+        "demoUrl": "/projects/remotable/"
     },
     {
         "id": "volvo",
