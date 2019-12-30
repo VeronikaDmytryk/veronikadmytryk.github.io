@@ -115,7 +115,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_7_app_main_screen_main_screen_component__["a" /* MainScreenComponent */] },
     { path: ':id', component: __WEBPACK_IMPORTED_MODULE_12_app_project_project_component__["a" /* ProjectComponent */] },
-    { path: '/projects/remotable/**', redirectTo: '/projects/remotable' },
+    { path: 'projects/remotable/**', redirectTo: '/projects/remotable' },
     { path: '**', redirectTo: '' }
 ];
 var AppModule = (function () {
