@@ -61,7 +61,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/app.component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/app.component.js.map
 
 /***/ }),
 
@@ -114,8 +114,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var appRoutes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_7_app_main_screen_main_screen_component__["a" /* MainScreenComponent */] },
-    { path: ':id', component: __WEBPACK_IMPORTED_MODULE_12_app_project_project_component__["a" /* ProjectComponent */] },
-    { path: '**', redirectTo: '' }
+    { path: ':id', component: __WEBPACK_IMPORTED_MODULE_12_app_project_project_component__["a" /* ProjectComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -148,7 +147,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/app.module.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/app.module.js.map
 
 /***/ }),
 
@@ -199,7 +198,7 @@ var ContactComponent = (function () {
     return ContactComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/contact-me-component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/contact-me-component.js.map
 
 /***/ }),
 
@@ -246,7 +245,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/footer-component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/footer-component.js.map
 
 /***/ }),
 
@@ -300,7 +299,7 @@ var HeaderComponent = (function () {
     return HeaderComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/header-component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/header-component.js.map
 
 /***/ }),
 
@@ -347,7 +346,7 @@ var MainScreenComponent = (function () {
     ], MainScreenComponent);
     return MainScreenComponent;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/main-screen-component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/main-screen-component.js.map
 
 /***/ }),
 
@@ -405,7 +404,7 @@ var PortfolioPipe = (function () {
     ], PortfolioPipe);
     return PortfolioPipe;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/portfolio-pipe.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/portfolio-pipe.js.map
 
 /***/ }),
 
@@ -462,7 +461,7 @@ var PortfolioComponent = (function () {
     return PortfolioComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/portfolio-component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/portfolio-component.js.map
 
 /***/ }),
 
@@ -543,7 +542,7 @@ var ProjectComponent = (function () {
     return ProjectComponent;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/project-component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/project-component.js.map
 
 /***/ }),
 
@@ -591,7 +590,7 @@ var ResumeComponent = (function () {
     ], ResumeComponent);
     return ResumeComponent;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/resume-component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/resume-component.js.map
 
 /***/ }),
 
@@ -641,7 +640,7 @@ var SkillsComponent = (function () {
     ], SkillsComponent);
     return SkillsComponent;
 }());
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/skills-component.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/skills-component.js.map
 
 /***/ }),
 
@@ -728,7 +727,7 @@ var projects = [
             "../assets/projects/remotable/3.png",
             "../assets/projects/remotable/4.png"
         ],
-        "demoUrl": "http://veronikadmytryk.net/projects/remotable/interviews"
+        "demoUrl": "/projects/remotable"
     },
     {
         "id": "volvo",
@@ -752,7 +751,7 @@ var projects = [
             "../assets/projects/volvo/1.png"
         ],
         "previewImage": "../assets/projects/volvo/thumbnail.png",
-        "demoUrl": "http://veronikadmytryk.net/webpages/volvo/"
+        "demoUrl": "/webpages/volvo/"
     },
     {
         "id": "tasker",
@@ -770,7 +769,7 @@ var projects = [
         "images": [
             "../assets/projects/tasker/1.png"
         ],
-        "demoUrl": "http://veronikadmytryk.net/projects/tasker/"
+        "demoUrl": "/projects/tasker/"
     },
     {
         "id": "calculator",
@@ -788,7 +787,7 @@ var projects = [
         "images": [
             "../assets/projects/calculator/1.png"
         ],
-        "demoUrl": "http://veronikadmytryk.net/projects/calculator/"
+        "demoUrl": "/projects/calculator/"
     },
     {
         "id": "freelance-show",
@@ -810,7 +809,7 @@ var projects = [
             "../assets/projects/freelanceshow/1.png"
         ],
         "previewImage": "../assets/projects/freelanceshow/thumbnail.png",
-        "demoUrl": "http://veronikadmytryk.net/webpages/freelanceshow/"
+        "demoUrl": "/webpages/freelanceshow/"
     },
     {
         "id": "freelance-design",
@@ -830,7 +829,7 @@ var projects = [
             "PHP (forms)"
         ],
         "repositoryUrl": null,
-        "demoUrl": "http://veronikadmytryk.net/webpages/freelance-design/",
+        "demoUrl": "/webpages/freelance-design/",
         "images": [
             "../assets/projects/freelancedesign/1.png"
         ],
@@ -857,7 +856,7 @@ var projects = [
             "../assets/projects/webgames/1.png"
         ],
         "previewImage": "../assets/projects/webgames/thumbnail.png",
-        "demoUrl": "http://veronikadmytryk.net/webpages/webgames/"
+        "demoUrl": "/webpages/webgames/"
     },
     {
         "id": "frontend-genius",
@@ -880,7 +879,7 @@ var projects = [
             "../assets/projects/frontendgenius/1.png"
         ],
         "previewImage": "../assets/projects/frontendgenius/thumbnail.png",
-        "demoUrl": "http://veronikadmytryk.net/webpages/frontend-genius/"
+        "demoUrl": "/webpages/frontend-genius/"
     },
     {
         "id": "first-pixel",
@@ -904,7 +903,7 @@ var projects = [
             "../assets/projects/firstpixel/1.png"
         ],
         "previewImage": "../assets/projects/firstpixel/thumbnail.png",
-        "demoUrl": "http://veronikadmytryk.net/webpages/first-pixel/"
+        "demoUrl": "/webpages/first-pixel/"
     },
     {
         "id": "furry-house",
@@ -1023,7 +1022,7 @@ var skills = [
     "Adobe Photoshop",
     "Adobe Illustrator"
 ];
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/environment.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/environment.js.map
 
 /***/ }),
 
@@ -1044,7 +1043,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Users/Nika D/Documents/Portfolio website/myportfolio/src/main.js.map
+//# sourceMappingURL=C:/Users/Nika D/Documents/Software Development Projects/Portfolio/src/main.js.map
 
 /***/ }),
 
