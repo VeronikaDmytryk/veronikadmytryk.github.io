@@ -268,7 +268,7 @@ var FooterComponent = (function () {
 /***/ "./src/app/footer/footer.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"footer clearfix\">\r\n    <div class=\"container\">\r\n        <p class=\"credentials\">© 2018/ Designed and Developed by Veronika Dmytryk</p>\r\n        <div class=\"social-links\">\r\n            <ul class=\"social-links\">\r\n                <li><a href=\"mailto:veronika.dmytryk@gmail.com\"><i class=\"fa fa-envelope\"></i></a></li>\r\n                <li><a href=\"https://github.com/VeronikaDmytryk\" target=\"_blank\"><i class=\"fa fa-github-square\"></i></a></li>\r\n                <li><a href=\"https://www.linkedin.com/in/veronika-dmytryk/\" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"footer clearfix\">\r\n    <div class=\"container\">\r\n        <p class=\"credentials\">© 2020 / Designed and Developed by Veronika Dmytryk / Hosted using <a href=\"https://pages.github.com/\">GitHub Pages</a></p>\r\n        <div class=\"social-links\">\r\n            <ul class=\"social-links\">\r\n                <li><a href=\"mailto:veronika.dmytryk@gmail.com\"><i class=\"fa fa-envelope\"></i></a></li>\r\n                <li><a href=\"https://github.com/VeronikaDmytryk\" target=\"_blank\"><i class=\"fa fa-github-square\"></i></a></li>\r\n                <li><a href=\"https://www.linkedin.com/in/veronika-dmytryk/\" target=\"_blank\"><i class=\"fa fa-linkedin\"></i></a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
